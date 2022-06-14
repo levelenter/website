@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      defer
+      src="https://unpkg.com/@google/model-viewer@1.12.0/dist/model-viewer.min.js"
+    ></script>
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+
+      model-viewer {
+        width: 100%;
+        height: 100%;
+        --poster-color: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div
+      class="demo"
+      style="background: linear-gradient(#ffffff, #addada); overflow-x: hidden"
+    >
+      <span
+        style="
+          position: absolute;
+          text-align: center;
+          font-size: 50px;
+          line-height: 100px;
+          left: 50%;
+          transform: translateX(-50%);
+        "
+        >Level Enter inc.<br />Site AR</span
+      > -->
+
+    <model-viewer
+      src="/assets/model/kilin_all.glb"
+      camera-controls=""
+      ar=""
+      autoplay=""
+      ar-modes="webxr scene-viewer quick-look"
+      auto-rotate=""
+      environment-image="neutral"
+    >
+      <button
+        slot="ar-button"
+        style="
+          background-color: white;
+          border-radius: 4px;
+          border: none;
+          position: absolute;
+          bottom: 16px;
+          right: 16px;
+        "
+      >
+        👆ここをタップ！👆
+      </button>
+    </model-viewer>
+    <!-- </div> -->
+  </body>
+</html>
