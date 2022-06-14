@@ -7,7 +7,6 @@
     ></script>
     <meta charset="UTF-8" />
     <!--html_placeholder-->
-    <a id="myEnterARButton" href="#"></a>
   </head>
   <body style="margin: 0; overflow: hidden; height: 100%">
     <script type="text/javascript">
@@ -407,13 +406,13 @@
         forever(() => {
           const ro = rig.getAttribute("rotation");
           ro.y = move;
-          move = move + 0.05;
+          move = move + 0.02;
           if (move < 180) {
             rig.setAttribute("rotation", `${ro.x} ${ro.y} ${ro.z}`);
           } else {
             const po = rig.getAttribute("position");
             po.z = goahead;
-            goahead = goahead + 0.05;
+            goahead = goahead + 0.02;
             rig.setAttribute("position", `${po.x} ${po.y} ${po.z}`);
           }
         });
