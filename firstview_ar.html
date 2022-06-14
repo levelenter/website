@@ -23,11 +23,12 @@
     </style>
   </head>
   <body>
-    <!-- <div
+    <div
       class="demo"
       style="background: linear-gradient(#ffffff, #addada); overflow-x: hidden"
     >
-      <span
+      <!--
+        <span
         style="
           position: absolute;
           text-align: center;
@@ -39,29 +40,30 @@
         >Level Enter inc.<br />Site AR</span
       > -->
 
-    <model-viewer
-      src="/assets/model/kilin_all.glb"
-      camera-controls=""
-      ar=""
-      autoplay=""
-      ar-modes="webxr scene-viewer quick-look"
-      auto-rotate=""
-      environment-image="neutral"
-    >
-      <button
-        slot="ar-button"
-        style="
-          background-color: white;
-          border-radius: 4px;
-          border: none;
-          position: absolute;
-          bottom: 16px;
-          right: 16px;
-        "
+      <model-viewer
+        src="/assets/model/kilin_all.glb"
+        camera-controls=""
+        ar=""
+        autoplay=""
+        ar-modes="webxr scene-viewer quick-look"
+        auto-rotate=""
+        environment-image="neutral"
       >
-        👆ここをタップ！👆
-      </button>
-    </model-viewer>
-    <!-- </div> -->
+        <button
+          slot="ar-button"
+          style="
+            background-color: white;
+            border-radius: 4px;
+            border: none;
+            position: absolute;
+            bottom: 16px;
+            font-size: 24px;
+            right: 16px;
+          "
+        >
+          👆ここをタップ！👆
+        </button>
+      </model-viewer>
+    </div>
   </body>
 </html>
